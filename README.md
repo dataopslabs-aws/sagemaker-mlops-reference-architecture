@@ -1,8 +1,7 @@
 # sagemaker-mlops-reference-architecture
+## 1 Machine learning (ML) life cycle starts with Data, We create a separate account for all datastore. The data store can be S3, EFS, DynamoDB, RDS, Athena, Redshift. We use Glue / EMR for some data processing and store it back in a Data Account.
 
-
-Machine learning (ML) life cycle starts with Data, We create a separate account for all datastore. The data store can be S3, EFS, DynamoDB, RDS, Athena, Redshift. We use Glue / EMR for some data processing and store it back in a Data Account.
-Security Account is mandatory for any enterprise scale usage, to Maintain User repository e.g) IAM Center (SSO), CloudTrail to log all the events and Alert if needed, Security Hub and Guarduty.
+## 2 Security Account is mandatory for any enterprise scale usage, to Maintain User repository e.g) IAM Center (SSO), CloudTrail to log all the events and Alert if needed, Security Hub and Guarduty.
 AWS Data lake for Unified data Governance. Data Lakes allow various roles in your organisation like data scientists, data developers, and business analysts to access data with their choice of analytic tools and frameworks. This includes open source frameworks such as Apache Hadoop, Presto, and Apache Spark, and commercial offerings from data warehouse and business intelligence vendors. Data Lakes allow you to run analytics without the need to move your data to a separate analytics system.
 Shared Services Account to provisioned for all DevOps activities like provisioning the All the infrastructure shown in diagram using IaaC, Custom Image for Model. Codepipeline to deploy the Model to development and production environment using CICD.
 Sagemaker Role Manager provides 3 preconfigured role personas and predefined permissions for 12 common ML activities.

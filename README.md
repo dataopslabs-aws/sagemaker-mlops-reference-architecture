@@ -1,4 +1,11 @@
 # sagemaker-mlops-reference-architecture
+
+
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
+
 ## 1 Machine learning (ML) life cycle starts with Data, We create a separate account for all datastore. The data store can be S3, EFS, DynamoDB, RDS, Athena, Redshift. We use Glue / EMR for some data processing and store it back in a Data Account.
 
 ## 2 Security Account is mandatory for any enterprise scale usage, to Maintain User repository e.g) IAM Center (SSO), CloudTrail to log all the events and Alert if needed, Security Hub and Guarduty.
